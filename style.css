@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background: black;
+}
+.main {
+  background-image: url("Assets/img/bg.jpg");
+  height: 70vh;
+  position: relative;
+  background-size: max(1200px,100vw);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.main .box {
+  height:70vh;
+  width: 100%;
+  opacity: 0.45;
+  background-color: black;
+  position: absolute;
+  top: 0;
+}
+nav {
+  max-width: 60vw;
+  height: 60px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img {
+  color: rgb(238, 19, 19);
+  width: 114px;
+  position: relative;
+  z-index: 10;
+}
+nav button {
+  position: relative;
+  z-index: 10;
+}
+.center-text {
+  font-family: "Martel Sans", sans-serif;
+  height: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  gap: 12px;
+  padding:0 30px;
+}
+.center-text > :nth-child(1) {
+  font-weight: bolder;
+  font-size: 48px;
+  text-align:center;
+}
+.center-text > :nth-child(2) {
+  font-weight: 400;
+  font-size: 24px;
+  text-align:center;
+}
+/* so '>' is used after the class-id-tag to notate immediate child or first child pe lgega bss css */
+.center-text > :nth-child(3) {
+  font-weight: 400;
+  font-size: 20px;
+  text-align:center;
+}
+
+.seperation{
+    height: 7px;
+    background-color: grey;
+}
