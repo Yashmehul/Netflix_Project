@@ -45,7 +45,7 @@ nav button {
 }
 .center-text {
   font-family: "Martel Sans", sans-serif;
-  height: 100%;
+  height: calc(100% - 60px);
   color: white;
   display: flex;
   align-items: center;
@@ -73,6 +73,112 @@ nav button {
 }
 
 .seperation{
-    height: 7px;
+    height: 5px;
     background-color: grey;
+    margin-bottom: 2px;
+}
+.center-text-buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.btn{
+  padding: 3px 11px;
+  font-weight:bold;
+  background-color:rgb(10 8 8 / 53%);
+  color: white;
+  border: 1px solid rgba(207, 199, 199, 0.671);
+  border-radius: 4px;
+  cursor: pointer;
+  gap: 4px;
+}
+
+.btn-red{
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border: 1px solid black;
+  border-radius: 4px;
+  
+}
+.btn-red-sm{
+  background-color: red;
+  color: white;
+  font-weight: 400;
+  
+}
+.main input{
+  padding: 7px 101px 8px 14px;
+  color: white;
+  font-weight: 400;
+  font-size: 12px;
+  border: 1px solid rgba(10,5,5,0.5); 
+  border-radius: 2px;
+  background-color: rgba(10,5,5,0.5);
+}
+.first
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 70vw;
+  margin: auto;
+  margin-top:10px;
+  color: white;
+  
+}
+.secImg {
+  position: relative;
+}
+
+.secImg img {
+  width: 30vw;
+  position: relative;
+  z-index: 2; 
+}
+
+.secImg video {
+  position: absolute;
+  top: 22%;
+  left: 15%; 
+  width: 70%; 
+  /* width 70% krne se resposnsiveness aaya video mei as ye adjust hoga parent ke hisssab se relative lement kaa 
+  70% */
+  height: auto;
+  z-index: 1;  
+}
+section.first >  div{
+  display: flex;
+  flex-direction: column;
+}
+section.first > div :nth-child(1){
+  font-size: 48px;
+  font-weight:bolder;
+
+
+}
+section.first > div :nth-child(2){
+  font-size: 22px;
+}
+
+.faq h2{
+  text-align: center;
+  font-weight:bolder;
+  margin-bottom: 10px;
+}
+.faq{
+  background-color: black;
+  color: white;
+}
+.faqbox{
+  display: flex;
+  justify-content: space-between;
+  background-color: grey;
+  padding:14px;
+  width: 40vw;
+  margin:34px auto;
+  font-size: 18px;
 }
